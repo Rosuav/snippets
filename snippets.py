@@ -5,14 +5,16 @@ import logging
 # Set the log output file, and the log level
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
 
+data = {}
+
 def put(name, snippet):
     """
     Store a snippet with an associated name.
 
     Returns the name and the snippet
     """
-    logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
-    print("Putting a snippet!")
+    logging.info("Storing({!r}, {!r})".format(name, snippet))
+    data[name] = snippet
     return name, snippet
 
 def get(name):
@@ -22,9 +24,8 @@ def get(name):
 
     Returns the snippet.
     """
-    logging.error("FIXME: Unimplemented - get({!r})".format(name))
-    print("Getting a snippet!")
-    return ""
+    logging.error("Retrieving({!r})".format(name))
+    return data.get(name)
 
 def main():
     """Main function"""

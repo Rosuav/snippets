@@ -1,0 +1,4 @@
+This code is approximately the same as is used in the Thinkful course, but
+has a couple of simplifications and variations, and (critically) one big
+show-stopper bug. (Or maybe it's a feature. Ask me about that.) This is to
+serve as a basis for a demonstration of 'git bisect'.

@@ -1,5 +1,4 @@
 """Store and retrieve snippets of text"""
-import sys
 from docstringargs import cmdline
 import logging
 
